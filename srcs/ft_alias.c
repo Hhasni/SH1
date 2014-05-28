@@ -6,11 +6,11 @@
 /*   By: hhasni <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/04/22 20:28:35 by hhasni            #+#    #+#             */
-/*   Updated: 2014/04/23 13:19:11 by hhasni           ###   ########.fr       */
+/*   Updated: 2014/05/18 22:33:22 by hhasni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <sh1.h>
+#include <sh2.h>
 
 static int				ft_alias_is_ok(char *str)
 {

@@ -75,7 +75,7 @@ int				get_next_line(int const fd, char **line)
 	buff = NULL;
 	if (!(buff = (char *)malloc(sizeof(char) * BUFF_SIZE + 1)))
 		return (-1);
-	while ((ret = read(fd, buff, BUFF_SIZE)) > 0 || tmp)
+	while ((ret = read(fd, buff, BUFF_SIZE)) > 0)
 	{
 		if (ret == -1)
 			return (-1);
@@ -84,11 +84,6 @@ int				get_next_line(int const fd, char **line)
 		bkp = ft_my_strcat_gnl(bkp, buff);
 		if (ft_search_n_save(bkp, &tmp, line) == 1)
 			return (1);
-	}
-	if (bkp && *bkp && ret == 0)
-	{
-		*line = ft_strdup(bkp);
-		return (1);
 	}
 	return (0);
 }

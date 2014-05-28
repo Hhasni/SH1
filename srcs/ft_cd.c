@@ -6,11 +6,11 @@
 /*   By: hhasni <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/04/22 20:33:20 by hhasni            #+#    #+#             */
-/*   Updated: 2014/04/23 13:19:37 by hhasni           ###   ########.fr       */
+/*   Updated: 2014/05/18 22:33:52 by hhasni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <sh1.h>
+#include <sh2.h>
 
 static int		ft_cd_is_valid(char *path, char *target)
 {

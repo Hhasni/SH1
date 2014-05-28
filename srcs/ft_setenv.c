@@ -6,11 +6,11 @@
 /*   By: hhasni <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/04/22 20:55:45 by hhasni            #+#    #+#             */
-/*   Updated: 2014/04/23 13:17:56 by hhasni           ###   ########.fr       */
+/*   Updated: 2014/05/18 22:35:05 by hhasni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <sh1.h>
+#include <sh2.h>
 
 static void				ft_setenv_new_entry(char *str, char **env)
 {

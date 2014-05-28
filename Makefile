@@ -6,11 +6,11 @@
 #    By: hhasni <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/12/29 12:51:34 by hhasni            #+#    #+#              #
-#    Updated: 2014/04/24 00:16:36 by hhasni           ###   ########.fr        #
+#    Updated: 2014/05/18 22:32:13 by hhasni           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME =		ft_minishell1
+NAME =		ft_minishell2
 
 CPATH =		./srcs/
 
@@ -28,6 +28,7 @@ SRCS =		ft_alias.c \
 			ft_path.c \
 			ft_prompt.c \
 			ft_protected_free.c \
+			ft_semicolon.c \
 			ft_setenv.c \
 			ft_tools.c \
 			ft_unsetenv.c \
@@ -50,6 +51,7 @@ $(NAME):	$(OBJS)
 			@make -C ./libft/
 			@$(CC) -o $(NAME) $(CFLAGS) $(OBJS) $(INCLUDES) -ltermcap
 			@echo -en "\r\033[38;5;22m✅  MAKE $(NAME)\033[0m\033[K"
+			@echo "💟"
 
 %.o:		$(CPATH)%.c
 			@$(CC) -c $< $(CFLAGS) $(HPATH)

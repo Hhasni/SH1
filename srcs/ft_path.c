@@ -6,11 +6,11 @@
 /*   By: hhasni <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/04/22 20:50:49 by hhasni            #+#    #+#             */
-/*   Updated: 2014/04/23 13:20:18 by hhasni           ###   ########.fr       */
+/*   Updated: 2014/05/18 22:34:34 by hhasni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <sh1.h>
+#include <sh2.h>
 
 static char		**ft_path_initialazing(char *str)
 {

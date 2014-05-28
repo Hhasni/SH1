@@ -6,11 +6,12 @@
 /*   By: hhasni <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/04/22 20:58:22 by hhasni            #+#    #+#             */
-/*   Updated: 2014/04/23 13:18:18 by hhasni           ###   ########.fr       */
+/*   Updated: 2014/05/18 22:35:26 by hhasni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <sh1.h>
+#include <sh2.h>
+#include <stdio.h> /*!*/
 
 static void			ft_unsetenv_erase(char *focus, char **env)
 {
@@ -24,9 +25,7 @@ static void			ft_unsetenv_erase(char *focus, char **env)
 	while (env[i])
 	{
 		if (ft_strncmp(focus, env[i], len) == 0)
-		{
 			t = i;
-		}
 		i++;
 	}
 	if (t != -1)
@@ -54,9 +53,6 @@ int					ft_unsetenv(char *line, char **bkp_env)
 	if (i != 2)
 		ft_putendl("ERROR, please type : unsetenv <VARIABLE>");
 	else
-	{
-		new = ft_filtr(tabc[1]);
-		ft_unsetenv_erase(new, bkp_env);
-	}
+		ft_unsetenv_erase(tabc[1], bkp_env);
 	return (1);
 }

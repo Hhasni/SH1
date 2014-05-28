@@ -6,11 +6,11 @@
 /*   By: hhasni <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/04/22 20:31:53 by hhasni            #+#    #+#             */
-/*   Updated: 2014/04/23 13:19:22 by hhasni           ###   ########.fr       */
+/*   Updated: 2014/05/18 22:33:32 by hhasni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <sh1.h>
+#include <sh2.h>
 
 void					ft_fill(t_struct **list, char *alias, char *cmd)
 {

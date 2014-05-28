@@ -6,11 +6,11 @@
 /*   By: hhasni <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/04/22 20:51:11 by hhasni            #+#    #+#             */
-/*   Updated: 2014/04/23 13:20:26 by hhasni           ###   ########.fr       */
+/*   Updated: 2014/05/18 22:34:46 by hhasni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <sh1.h>
+#include <sh2.h>
 
 static char			*ft_prompt_begin_at(char *str, char c)
 {

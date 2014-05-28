@@ -6,11 +6,11 @@
 /*   By: hhasni <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/04/22 20:56:09 by hhasni            #+#    #+#             */
-/*   Updated: 2014/04/23 13:18:08 by hhasni           ###   ########.fr       */
+/*   Updated: 2014/05/18 22:35:17 by hhasni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <sh1.h>
+#include <sh2.h>
 
 char				*ft_recover_target(char **bkp_env, char *target)
 {
@@ -50,9 +50,9 @@ char				*ft_filtr(char *str)
 		return (NULL);
 	while (str[i])
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-			bkp[j++] = str[i] - 32;
-		else if (str[i] != '=')
+//		if (str[i] >= 'a' && str[i] <= 'z')
+//			bkp[j++] = str[i] - 32;
+//		else if (str[i] != '=')
 			bkp[j++] = str[i];
 		i++;
 	}

@@ -6,15 +6,15 @@
 /*   By: hhasni <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/01/23 12:53:04 by hhasni            #+#    #+#             */
-/*   Updated: 2014/04/23 13:36:09 by hhasni           ###   ########.fr       */
+/*   Updated: 2014/05/22 15:42:37 by hhasni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <sh1.h>
+#include <sh2.h>
 
 void				ft_index(void)
 {
-	ft_putcolor(WLCM, "Your are now in hhasni's sh1 ");
+	ft_putcolor(WLCM, "Your are now in hhasni's sh2 ");
 	write(1, "try ", 4);
 	ft_putcolor(RED, "\"help\"");
 	write(1, " for more info\n", 15);
@@ -41,6 +41,8 @@ int					main(int ac, char **av, char **env)
 			path = ft_path_recover(env);
 			ft_loop(tab, bkp_env, path);
 		}
+		else
+			write(1, "YOU SON OF A BITCH\n", ft_strlen("YOU SON OF A BITCH\n"));
 	}
 	return (0);
 }

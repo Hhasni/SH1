@@ -6,13 +6,14 @@
 /*   By: hhasni <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/04/23 13:13:54 by hhasni            #+#    #+#             */
-/*   Updated: 2014/04/23 13:19:30 by hhasni           ###   ########.fr       */
+/*   Updated: 2014/05/18 22:33:43 by hhasni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <sh1.h>
+#include <sh2.h>
+#include <stdio.h> /*!*/
 
-static int		ft_build_empty(char *str)
+int		ft_build_empty(char *str)
 {
 	int			i;
 	int			j;
@@ -48,21 +49,23 @@ static int		ft_build_help(void)
 
 int				ft_build_check_line(char *line, char *av, char **bkp_env)
 {
+	char		**cmd = ft_strsplit(line, ' ');
+	
 	if (av == NULL)
 		return (1);
-	if (ft_strcmp(av, "help") == 0)
+	else if (ft_strcmp(av, "help") == 0)
 		return (ft_build_help());
-	if (ft_strncmp(av, "cd", 2) == 0)
+	else if (ft_strcmp(cmd[0], "cd") == 0)
 		return (ft_cd(line, bkp_env));
-	if (ft_strncmp(av, "setenv", 6) == 0)
+	else if (ft_strcmp(cmd[0], "setenv") == 0)
 		return (ft_setenv(line, bkp_env));
-	if (ft_strncmp(av, "unsetenv", 8) == 0)
+	else if (ft_strcmp(cmd[0], "unsetenv") == 0)
 		return (ft_unsetenv(line, bkp_env));
-	if (ft_strncmp(av, "env", 3) == 0)
+	else if (ft_strcmp(cmd[0], "env") == 0)
 		return (ft_env(bkp_env));
-	if (ft_build_empty(av) == 1)
-		return (1);
-	if (ft_strcmp(av, "exit") == 0)
+	// if (ft_build_empty(av) == 1)
+	// 	return (1);
+	else if (ft_strcmp(av, "exit") == 0)
 		exit(0);
 	return (0);
 }
